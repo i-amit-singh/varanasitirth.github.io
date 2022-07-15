@@ -1,0 +1,437 @@
+/* ................................................css of common elements.............................................................*/
+
+/* h1 tag font from google fonts */
+h1 {
+    font-family: 'EB Garamond', serif;
+}
+/* custome hr with wheat colour */
+hr {
+    height: 4px !important;
+    color: wheat !important;
+    opacity: 1 !important;
+}
+/* removing focus outline of all elements */
+*:focus {
+    outline: 0 !important;
+}
+/* a tag styling */
+a {
+    text-decoration: none !important;
+}
+a:hover {
+    text-decoration: none;
+}
+/* header with background image and linear gradient */
+header {
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.308), rgba(0, 0, 0, 0.281), #b3caf5b6), url(img/main.jpg);
+    background-size: cover;
+}
+/* fixed nav bar*/
+#nav1 {
+    position: fixed;
+    min-height: 10%;
+    /* margin-left: -12px; */
+    top: 0%;
+    min-width: 100%;
+    background-color: wheat;
+    z-index: 999;
+    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+}
+#nav2 {
+    position: fixed;
+    min-height: 10%;
+    /* margin-left: -12px; */
+    top: 0%;
+    min-width: 100%;
+    background-color: wheat;
+    z-index: 999;
+    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+}
+/* nav links hover effect */
+.nav-link:hover {
+    transform: scale(1.06);
+    transition-duration: 0.4s;
+    animation: ease-in-out;
+}
+/* btn bootstrap class changed to customise */
+.btn {
+    background-color: wheat !important;
+    height: 4rem;
+    width: 8rem;
+    border-radius: 50% !important;
+    font-size: x-large !important;
+    margin: 0px;
+    padding: 0px !important;
+    font-weight: bold !important;
+    color: white !important;
+}
+/* btn hover effect */
+.btn:hover {
+    background-color: rgb(255, 208, 122) !important;
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    animation: ease-in-out;
+}
+/* contact btn style */
+.contact-btn {
+    background-color: white;
+    border: 0px;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    opacity: 70%;
+    transform: scale(0.7);
+}.contact-btn:hover {
+    opacity: 100%;
+    transition-duration: 0.2s;
+    transform: scale(1);
+    transition-timing-function: ease-in-out;
+}.contact-btn:active {
+    transform: scale(0.8);
+    transition-duration: 0.3s;
+    animation: ease-in-out;
+}
+
+/* go to top image styling with fixed positioning and hover effect */
+#goTop {
+    position: fixed;
+    /* top: 80%; */
+    right: 2rem;
+    opacity: 90%;
+    z-index: 999;
+    background-color: wheat;
+    border: 4px solid wheat;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.479), 0 6px 20px 0 #B3CAF5;
+    transform: scale(0);
+}#goTop:hover {
+    transition-duration: 0.2s;
+    transform: scale(1.1);
+    transition-timing-function: ease-in-out;
+    opacity: 100%;
+}
+/* footer with blue tone complement to wheat colour */
+footer {
+    background-color: #B3CAF5;
+    color: white;
+}
+/* footer button styling and hover effect */
+footer button {
+    background-color: white;
+    border: 4px solid #B3CAF5;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    opacity: 70%;
+    transform: scale(0.7);
+}footer button:hover {
+    opacity: 100%;
+    transition-duration: 0.2s;
+    transform: scale(1);
+    transition-timing-function: ease-in-out;
+    margin: auto 0.2rem auto 0.2rem;
+}footer button:active {
+    transform: scale(0.8);
+    transition-duration: 0.3s;
+    animation: ease-in-out;
+}
+
+/* ................................................css of index elements.............................................................*/
+
+/* welcome message styling */
+.welcome {
+    height: 700px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 10%;
+    font-family: 'EB Garamond', serif;
+}
+/* increasing size with font by google fonts */
+.welcome h1 {
+    font-size: 16vw;
+    color: white;
+    font-family: 'Metamorphous', cursive;
+}
+.tabBtn{
+    height: 4rem;
+    width: 9rem;
+    background-color: white;
+    margin: -2px;
+    padding: 0px;
+    border: 0px;
+    z-index: 0;
+}.tabBtn:hover{
+    background-color: rgba(245, 222, 179, 0.753);
+}.tabBtn:active{
+    background-color: wheat;
+}
+
+/* vbox class of card for facts */
+.vbox {
+    max-width: 60rem;
+    background-color: wheat;
+    margin: auto;
+    margin-top: 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+
+}.vbox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.479), 0 6px 20px 0 rgba(0, 0, 0, 0.507) !important;
+    transition-duration: 0.4s;
+    animation: ease-in-out;
+}.vbox:nth-child(2n) {
+    background-color: white;
+}.vbox .col-md-4 {
+    border: 1rem solid wheat;
+    padding: 0px;
+    min-height: 15rem;
+}.vbox .col-md-4:nth-child(2n) {
+    border: 1rem solid white;
+}.vbox .col-md-8 {
+    border: 1rem solid wheat;
+    padding: 0px;
+}.vbox .col-md-8:nth-child(2n) {
+    border-color: white;
+}
+
+/* food card with hover effect */
+.food.card {
+    width: 22rem;
+    height: 17rem;
+    border: 4px solid wheat;
+    margin: 10px;
+    margin: auto;
+    margin-bottom: 2rem;
+}.food.card .hover {
+
+    background: linear-gradient(transparent, black);
+    visibility: hidden;
+    margin-top: auto;
+    color: white;
+    font-weight: bold;
+}
+/* hover class div appears on hovering with black linear gradient */
+.food.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.479), 0 6px 20px 0 #B3CAF5;
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    animation: ease-in-out;
+    z-index: 100;
+}.food.card:hover img {
+    opacity: 80%;
+}.food.card:hover .hover {
+    visibility: visible;
+    transition-duration: 0.3s;
+    animation: ease-in-out;
+}
+
+/* place card with hover effect */
+.place.card {
+    background-repeat: no-repeat;
+    width: fit-content;
+    height: 30rem;
+    width: 13rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    border: 2px solid wheat;
+}.place.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.479), 0 6px 20px 0 #B3CAF5;
+    transform: scale(1.04);
+    transition-duration: 0.3s;
+    animation: ease-in-out;
+    z-index: 100;
+}
+/* place card containing hover card div which apears oh hovering with black gradient */
+.place.card .hover {
+    margin-top: auto;
+    background: linear-gradient(transparent, black, black);
+    color: aliceblue;
+    text-align: center;
+    visibility: hidden;
+}.place.card:hover .hover {
+    visibility: visible;
+}
+/* place card title */
+.place.card .title {
+    color: white;
+    background: linear-gradient(black, #00000047, transparent);
+    height: 5rem;
+    align-self: center;
+    width: 13rem;
+}.place.card .title * {
+    align-self: center;
+}
+/* place card map button styling and hover effect */
+.place.card button {
+    border: 0px;
+    background-color: #ffffff;
+    margin: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.479), 0 6px 20px 0 #B3CAF5;
+    height: 3rem;
+    width: 3rem;
+}.place.card button:hover {
+    transform: scale(1.15);
+    transition-duration: 0.3s;
+    animation: ease-in-out;
+}.place.card button:active {
+    transform: scale(0.8);
+    transition-duration: 0.3s;
+    animation: ease-in-out;
+}
+
+/* ................................................css of about page elements.............................................................*/
+
+/* about page with background image and linear grading of white */
+#about {
+    background-repeat: no-repeat;
+    background: linear-gradient(white, transparent), url(img/monk1.jpg);
+    background-size: cover;
+}
+/* about cover img styling */
+#about-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}#about-cover img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+/* profile img styling with circular shape */
+#profil img {
+    height: 14rem;
+    border-radius: 50%;
+    margin-top: -7rem;
+    margin-left: 2rem;
+    border: 11px solid wheat;
+}
+/* about me card containing text content & background image with linear grading*/
+.aboutMe.card {
+    width: 45rem;
+    height: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 11px solid wheat;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    transform: scale(0.8);
+    background-repeat: no-repeat;
+    background: linear-gradient(wheat, rgba(0, 0, 0, 0.582)), url(img/culture.jpg);
+    background-size: cover;
+}
+.aboutMe.card h1 {
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/* ................................................css of fact elements.............................................................*/
+
+/* fact page with background image and linear grading of white */
+#factPage {
+    background-repeat: no-repeat;
+    background: linear-gradient(white, transparent), url(img/culture.jpg);
+    background-size: cover;
+}
+.vboxImg {
+    background-repeat: no-repeat;
+}
+
+/* ................................................css of help page elements.............................................................*/
+
+/* help page with background image and linear grading of white */
+#help {
+    background-repeat: no-repeat;
+    background: linear-gradient(white, transparent), url(img/arti.jpg);
+    background-size: cover;
+}
+/* shadow class for card shadow */
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+.bg-wheat {
+    background-color: wheat;
+}
+/* form styling  */
+#helpForm {
+    height: 36rem;
+    width: 80%;
+    text-align: left;
+    margin: auto;
+    border: 0px;
+    margin-bottom: 12rem;
+    margin-top: 2rem;
+}
+/* form select styling */
+form#helpForm .form-select {
+    display: inline;
+    width: 55%;
+    margin-left: auto;
+}
+/* div with role of button */
+div.rectbtn1 {
+    background-color: #B3CAF5;
+    color: white;
+}
+div.rectbtn1:hover {
+    background-color: #6b9bf5;
+    color: white;
+}
+/* p type 1 and 2 for form lables */
+p.type1 {
+    color: grey;
+    font-weight: 500 !important;
+    display: inline;
+}
+p.type2 {
+    color: #6b9bf5;
+    font-weight: lighter !important;
+    display: inline;
+}
+/* faq card */
+#faq {
+    height: auto;
+    width: 80%;
+    text-align: left;
+    margin: auto;
+    border: 0px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+/* accordian with card class and 0px left &right border */
+.accordian.card {
+    width: 85%;
+    border-left: 0px;
+    border-right: 0px;
+    margin: auto;
+    margin-bottom: 0px;
+    cursor: pointer;
+
+}
+
+/* accordian heading */
+.accordian.card strong {
+    vertical-align: middle;
+    font-weight: bolder;
+}
+
+/* accordian indicator floar at right */
+.accordian.card strong.indicator {
+    float: right;
+    font-size: x-large;
+}
+
+/* accordian content with display none */
+.accordian.card .content {
+    display: none;
+}
